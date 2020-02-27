@@ -64,9 +64,23 @@ margin-top: 20px;
 </label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
 <!---option 3 here---> Usted puede cambiar de carril, pero solamente cuando las condiciones del tránsito u obstrucciones en la carretera lo hacen necesario. </label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
 <!---option 4 here---> Ninguna de las anteriores. </label>
-<br> <a href="#A_Q1"> Haz click aquí para ver la respuesta.</a> </br> </form>
-<!--- QUESTION BLOCK STOP --->
-<form id="form1"> 
+<form id="form1">  
+<button onclick="myFunction()">Haz click aquí para ver la respuesta.</button>
+<div id="myDIV">
+<h4> Pregunta# 1: Respuesta correcta:</h4> Una línea entrecortada indica:  
+<br> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. </br>  
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 <a name="Q2"><h4>Pregunta #2
 ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
 Cuando es difícil ver adelante.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
