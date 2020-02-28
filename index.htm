@@ -65,7 +65,7 @@ margin-top: 20px;
 <!---option 3 here---> Usted puede cambiar de carril, pero solamente cuando las condiciones del tránsito u obstrucciones en la carretera lo hacen necesario. </label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
 <!---option 4 here---> Ninguna de las anteriores. </label>
 <form id="form1">  
-<button onclick="myFunction()">Haz click aquí para ver la respuesta.</button>
+<button onclick="myFunction()">Haz click aquí para ver la respuesta correcta.</button>
 <div id="myDIV">
 <h4> Pregunta# 1: Respuesta correcta:</h4> Una línea entrecortada indica:  
 <br> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. </br>  
@@ -88,6 +88,21 @@ Al llevar una carga pesada o tirar de un remolque.</label> <label for="sub_info"
 Cuando se siguen motocicletas.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
 Todas las anteriores.</label>
 <br> <a href="#A_Q2">Haz click aquí para ver la respuesta.</a> </br></form>
+<button onclick="myFunction()"> Haz click aquí para ver la respuesta correcta.</button>
+<div id="myDIV">
+<h4> Pregunta# 2: Respuesta correcta:</h4>   ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?<br> 
+Todas las anteriores.</br>  
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <form id="form1"> 
 <a name="Q3"><h4>Pregunta #3
@@ -161,8 +176,7 @@ en un asiento protector para niños mirando hacia el frente, en el asiento trase
 <!---REAL ANSWER---> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. 
 </br>  </a> <a href="#Q1">Haz click aquí para regresar a la pregunta.</a>
 
-<a name="A_Q2"><h4> Pregunta# 2: Respuesta correcta:</h4>   ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?<br> 
-Todas las anteriores.</br>  </a> <a href="#Q2">Haz click aquí para regresar a la pregunta.</a>
+
 
 <a name="A_Q3"><h4> Pregunta# 3: Respuesta correcta:</h4>   Si su auto cae en agua, usted debe:<br> 
 sálgase antes de que comience a hundirse.</br>  </a> <a href="#Q3">Haz click aquí para regresar a la pregunta.</a>
