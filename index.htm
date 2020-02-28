@@ -2,6 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
 background-color: white;
@@ -46,163 +47,215 @@ button {
 width: 100px;
 margin-top: 20px;
 }
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 28px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: Green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 </style>
-  <body>
-<h1>Preparacion para el Examen de Permiso (DMV NY)</h1>
-<br> <h3> Student Coalition for Migrant Workers @ SUNY Geneseo </h3> <img src="logo.jpg" alt="SCMW Logo" style="width:200px;height:100px;"> </br>
+
+
+
+<body>
+<a name="Main"> </a>
+<div class="navbar">
+    <a href="#Main"> Pagina Principal</a> 
+    <a href="#P">Preguntas de Practica</a>
+  <div class="dropdown">
+    <button class="dropbtn"> Manual 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+		<a href="#T"> Tabla de Contenidos </a>
+		<a href="#Ch4">Capitulo 4</a>
+		<a href="#Ch5">Capitulo 5</a>
+		<a href="#Ch6">Capitulo 6</a>
+		<a href="#Ch7">Capitulo 7</a>
+		<a href="#Ch8">Capitulo 8</a>
+		<a href="#Ch9">Capitulo 9</a>
+		<a href="#Ch10">Capitulo 10</a>
+		<a href="#Ch11">Capitulo 11</a>
+		<a href="#Ch12">Capitulo 12</a> </div> </div>  </div>
+
+
+<h1>Preparacion para el Examen de Permiso (DMV NY)  </h1> </a>
 <p> El examen escrito para una licencia clase D, M, DJ, MJ o E examina el conocimiento de las reglas viales, las técnicas de conducción segura, las señales viales y las leyes referentes al consumo de alcohol y drogas al conducir. Para aprobar el examen escrito, debe contestar correctamente al menos 14 de las 20 preguntas, pero debe contestar correctamente dos de las cuatro preguntas acerca de las señales viales. 
-<br> Puede practicar para el examen escrito usando las preguntas incluidas en este Sitio de Web y el Manual para Conductores. Toda esta información se encuentra, 
+<br> Puede practicar para el examen escrito usando las preguntas incluidas en este Sitio de Web y el Manual para Conductores. Debe consultar constantemente el manual y no confiar únicamente en estas preguntas de práctica para estudiar. </br>
+<br> Toda esta información se encuentra, 
 <a href="https://es.dmv-permit-test.com/new-york/examen-manejo-1.html"> aqui </a>  y 
-  <a href="https://dmv.ny.gov/driver-license/drivers-manual-practice-tests"> aqui </a> </br> </p> 
+<a href="https://dmv.ny.gov/driver-license/drivers-manual-practice-tests"> aqui. </a> No poseemos los derechos de esta información.</br> </p>  
+
+<a href="#M"> <h3> Haz Click Aqui Para Revisar El Manual </h3>  </a> 
+
+
+
+
+
 <!--- QUESTIONS--->
-  
-<!--- QUESTION BLOCK START ---> 
-<form id="form1"> <a name="Q1"><h4>  
-<!---QUESTION HERE---> Pregunta #1: Una línea entrecortada indica:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-<!---option 1 here---> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-<!---option 2 here---> Usted no puede pasar otros vehículos o cruzar la línea.
-</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-<!---option 3 here---> Usted puede cambiar de carril, pero solamente cuando las condiciones del tránsito u obstrucciones en la carretera lo hacen necesario. </label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-<!---option 4 here---> Ninguna de las anteriores. </label>
-</form>
-
-<button onclick="myFunction()">Haz click aquí para ver la respuesta correcta.</button>
-<div id="myDIV">
-<h4> Pregunta# 1: Respuesta correcta:</h4> Una línea entrecortada indica:  
-<br> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. </br>  
-</div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-
-
+<a name="P"> <h2> Preguntas de Practica </h2> </a>
 <form id="form1"> 
-<h4>Pregunta #2
-¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-Cuando es difícil ver adelante.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-Al llevar una carga pesada o tirar de un remolque.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-Cuando se siguen motocicletas.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Todas las anteriores.</label>
-<button onclick="myFunction()"> Haz click aquí para ver la respuesta correcta.</button>
-<div id="myDIV">
-<h4> Pregunta# 2: Respuesta correcta:</h4>   ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?<br> 
-Todas las anteriores.</br>  
-</div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-</form>
-  
-  
-<form id="form1"> 
-<a name="Q3"><h4>Pregunta #3
-Si su auto cae en agua, usted debe:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-esperar a que el agua se acerque y dejarla salir en pequeñas respiraciones a través de su nariz.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-sálgase antes de que comience a hundirse.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-llamar al departamento de bomberos inmediatamente.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Ninguna de las anteriores.</label>
-<br> <a href="#A_Q3">Haz click aquí para ver la respuesta.</a> </br></form>
+<h4><!--- question--->Pregunta #1: Una línea entrecortada indica: </h4> 
+<br><!--- option one---> 1) Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. </br>  
+<br> <!--- option two---> 2) Usted no puede pasar otros vehículos o cruzar la línea.  </br>
+<br> <!--- option three---> 3) Usted puede cambiar de carril, pero solamente cuando las condiciones del tránsito u obstrucciones en la carretera lo hacen necesario.</br>
+<br> <!--- option four---> 4) Ninguna de las anteriores.</br>
+</form> <button onclick="myFunction1()" class="block" >Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV1" style="display:none">
+<!--- answer here---> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo.</div>
+<script>function myFunction1() {var x = document.getElementById("myDIV1");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script> <a href="#Main"> Pagina Principal </a> 
+
+<form id="form1"> <h4> Pregunta #2 ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?</h4> <br> 1)  Cuando es difícil ver adelante.</br><br> 2) Al llevar una carga pesada o tirar de un remolque.</br> <br> 3)Cuando se siguen motocicletas. </br> <br> 4) Todas las anteriores </br> </form> <button onclick="myFunction2()" class="block" >Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV2" style="display:none">Todas las anteriores. </div> <script>function myFunction2() {var x = document.getElementById("myDIV2");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>
+ <a href="#Main"> Pagina Principal </a>  
 
 
-<form id="form1"> 
-<a name="Q4"><h4>Pregunta #4 La ley de NY requiere que los conductores usen sus luces/faros:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-desde media hora después de que el sol se pone hasta media hora antes de que salga el sol.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-cuando la visibilidad es menos de 1,000 pies.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-cuando usan sus limpiaparabrisas para limpiar la lluvia, la niebla o la nieve.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Todas las anteriores.</label>
-<br> <a href="#A_Q4">Haz click aquí para ver la respuesta.</a> </br></form>
-
-<form id="form1"> 
-<a name="Q5"><h4>Pregunta #5
-¿Qué significa un letrero de NO STANDING?</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-Los conductores no pueden pararse frente a los vehículos estacionados.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-Los vehículos se pueden detener sólo para obedecer una señal de tránsito, letrero u oficial.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-Los conductores deben dejar a los pasajeros antes de salir.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Los conductores sólo pueden hacer una parada temporera para recoger o dejar los pasajeros.</label>
-<br> <a href="#A_Q5">Haz click aquí para ver la respuesta.</a> </br></form>
-
-<form id="form1"> 
-<a name="Q6"><h4>Pregunta #6
-Las vueltas en U son ilegales:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-en vías expresas de acceso limitado.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-en zonas escolares.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-en distritos comerciales en la Ciudad de Nueva York.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Todas las anteriores.</label>
-<br> <a href="#A_Q6">Haz click aquí para ver la respuesta.</a> </br></form>
+<form id="form1"> <h4> Pregunta #3 Si su auto cae en agua, usted debe:</h4> <br> 1)  esperar a que el agua se acerque y dejarla salir en pequeñas respiraciones a través de su nariz.</br><br> 2) sálgase antes de que comience a hundirse.</br> <br> 3)llamar al departamento de bomberos inmediatamente. </br> <br> 4) Ninguna de las anteriores. </br> </form> <button onclick="myFunction3()" class="block">Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV3" style="display:none">sálgase antes de que comience a hundirse. </div> <script>function myFunction3() {var x = document.getElementById("myDIV3");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>  <a href="#Main"> Pagina Principal </a>  
 
 
-<form id="form1"> 
-<a name="Q7"><h4>Pregunta #7
-Para protección, a los motociclistas se les requiere:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-usar cascos aprobados.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-mantener sus luces/faros delanteras y traseras encendidas en todo momento.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-hacer señal de virajes, cambios de carril y paradas.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-Ninguna de las anteriores.</label>
-<br> <a href="#A_Q7">Haz click aquí para ver la respuesta.</a> </br></form>
+<form id="form1"> <h4> Pregunta #4 La ley de NY requiere que los conductores usen sus luces/faros:</h4> <br> 1)  desde media hora después de que el sol se pone hasta media hora antes de que salga el sol.</br><br> 2) cuando la visibilidad es menos de 1,000 pies.</br> <br> 3)cuando usan sus limpiaparabrisas para limpiar la lluvia, la niebla o la nieve. </br> <br> 4) Todas las anteriores. </br> </form> <button onclick="myFunction4()" class="block">Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV4" style="display:none">Todas las anteriores. </div> <script>function myFunction4() {var x = document.getElementById("myDIV4");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>  <a href="#Main"> Pagina Principal </a> 
 
-<form id="form1"> 
-<a name="Q8"><h4>Pregunta #8
-Nunca ponga a un infante ____________________________________________ de un auto que tenga bolsa de aire de pasajero.</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-en un asiento protector para niños mirando hacia atrás, en el asiento trasero</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-en un asiento protector para niños mirando hacia el frente, en el asiento delantero</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-en un asiento protector para niños mirando hacia atrás, en el asiento delantero</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-en un asiento protector para niños mirando hacia el frente, en el asiento trasero</label>
-<br> <a href="#A_Q8">Haz click aquí para ver la respuesta.</a> </br></form>
+<form id="form1"> <h4> Pregunta #5 ¿Qué significa un letrero de NO STANDING?</h4> <br> 1)  Los conductores no pueden pararse frente a los vehículos estacionados.</br><br> 2) Los vehículos se pueden detener sólo para obedecer una señal de tránsito, letrero u oficial.</br> <br> 3)Los conductores deben dejar a los pasajeros antes de salir. </br> <br> 4) Los conductores sólo pueden hacer una parada temporera para recoger o dejar los pasajeros. </br> </form> <button onclick="myFunction5()" class="block">Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV5" style="display:none">Los conductores sólo pueden hacer una parada temporera para recoger o dejar los pasajeros. </div> <script>function myFunction5() {var x = document.getElementById("myDIV5");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>  <a href="#Main"> Pagina Principal </a> 
 
-<form id="form1"> 
-<a name="Q9"><h4>Pregunta #9
-¿Cuál es la posición ideal de las manos al volante?</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
-3-6 ó 4-7</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
-12-6 ó 11-7</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
-9-3 ó 8-4</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
-8-4 ó 10-5</label>
-<br> <a href="#A_Q9">Haz click aquí para ver la respuesta.</a> </br></form>
+<form id="form1"> <h4> Pregunta #6 Las vueltas en U son ilegales:</h4> <br> 1)  en vías expresas de acceso limitado.</br><br> 2) en zonas escolares.</br> <br> 3)en distritos comerciales en la Ciudad de Nueva York. </br> <br> 4) Todas las anteriores. </br> </form> <button onclick="myFunction6()" class="block">Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV6" style="display:none">Todas las anteriores. </div> <script>function myFunction6() {var x = document.getElementById("myDIV6");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>  <a href="#Main"> Pagina Principal </a> 
 
-<!--- ANSWERS--->
-<a name="A_Q1"> 
-<h4> Pregunta# 1: Respuesta correcta:</h4>   
-<!---RPT QUESTION here---> Una línea entrecortada indica:  
-<br> 
-<!---REAL ANSWER---> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo. 
-</br>  </a> <a href="#Q1">Haz click aquí para regresar a la pregunta.</a>
+<form id="form1"> <h4> Pregunta #7 Para protección, a los motociclistas se les requiere:</h4> <br> 1)  usar cascos aprobados.</br><br> 2) mantener sus luces/faros delanteras y traseras encendidas en todo momento.</br> <br> 3)hacer señal de virajes, cambios de carril y paradas. </br> <br> 4) Ninguna de las anteriores. </br> </form> <button onclick="myFunction7()" class="block">Haz click aquí para ver la respuesta correcta.</button> <div id="myDIV7" style="display:none">usar cascos aprobados. </div> <script>function myFunction7() {var x = document.getElementById("myDIV7");if (x.style.display === "none") {x.style.display = "block";} else {x.style.display = "none";}}</script>  <a href="#Main"> Pagina Principal </a>  
 
 
 
-<a name="A_Q3"><h4> Pregunta# 3: Respuesta correcta:</h4>   Si su auto cae en agua, usted debe:<br> 
-sálgase antes de que comience a hundirse.</br>  </a> <a href="#Q3">Haz click aquí para regresar a la pregunta.</a>
+<a name="M"> <h2> Manual para Conductores </h2> </a> 
+<h4> Haz click al capitulo al cual deseas leer </h4>
 
-<a name="A_Q4"><h4> Pregunta# 4: Respuesta correcta:</h4>   La ley de NY requiere que los conductores usen sus luces/faros:<br> 
-Todas las anteriores.</br>  </a> <a href="#Q4">Haz click aquí para regresar a la pregunta.</a>
+<a href="#Main"> <br> Pagina Principal.</br> </a>
 
-<a name="A_Q5"><h4> Pregunta# 5: Respuesta correcta:</h4>   ¿Qué significa un letrero de NO STANDING? <br> 
-Los conductores sólo pueden hacer una parada temporera para recoger o dejar los pasajeros.</br>  </a> <a href="#Q5">Haz click aquí para regresar a la pregunta.</a>
 
-<a name="A_Q6"><h4> Pregunta# 6: Respuesta correcta:</h4>    Las vueltas en U son ilegales: <br> 
-Todas las anteriores.</br>  </a> <a href="#Q6">Haz click aquí para regresar a la pregunta.</a>
 
-<a name="A_Q7"><h4> Pregunta# 7: Respuesta correcta:</h4>   Para protección, a los motociclistas se les requiere: <br> 
-usar cascos aprobados.</br>  </a> <a href="#Q7">Haz click aquí para regresar a la pregunta.</a>
 
-<a name="A_Q8"><h4> Pregunta# 8: Respuesta correcta:</h4>   Nunca ponga a un infante ____________________________________________ de un auto que tenga bolsa de aire de pasajero. <br> en un asiento protector para niños mirando hacia atrás, en el asiento delantero
- </br>  </a> <a href="#Q8">Haz click aquí para regresar a la pregunta.</a>
+<a name="T">  <button onclick="myFunction100t()"> Contenidos </button> <div id="t" style="display:none"> <iframe src="tabla.pdf" width="100%" height="500px"> </iframe>
+</div> <script> function myFunction100t() {var x = document.getElementById("t"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}} </script> </a> 
 
-<a name="A_Q9"><h4> Pregunta# 9: Respuesta correcta:</h4> ¿Cuál es la posición ideal de las manos al volante? <br> 
-9-3 ó 8-4 </br>  </a> <a href="#Q8">Haz click aquí para regresar a la pregunta.</a>
+<br>
+<a name="Ch4"> <button onclick="myFunction1004()"> Capitulo 4 </button> <div id="cfour" style="display:none"> 
+<iframe src="Manual para Conductores_C4.pdf" width="100%" height="500px"> </iframe> </div> <script> function myFunction1004() {var x = document.getElementById("cfour"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}} </script>  </a>
+</br>
 
+
+<br>
+<a name="Ch5"> <button onclick="myFunction1005()">Capitulo 5</button> <div id="c5" style="display:none"> <iframe src="Manual para Conductores_C5.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction1005() {var x = document.getElementById("c5"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+
+</br>
+<br>
+<a name="Ch6"> <button onclick="myFunction1006()">Capitulo 6</button> <div id="c6" style="display:none"> <iframe src="Manual para Conductores_C6.pdf" width="100%" height="500px"> </iframe> </div> <script> function myFunction1006() {var x = document.getElementById("c6"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch7"> <button onclick="myFunction1007()">Capitulo 7</button> <div id="c7" style="display:none"> <iframe src="Manual para Conductores_C7.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction1007() {var x = document.getElementById("c7"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch8"> <button onclick="myFunction1008()">Capitulo 8</button> <div id="c8" style="display:none"> <iframe src="Manual para Conductores_C8.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction1008() {var x = document.getElementById("c8"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch9"> <button onclick="myFunction1009()">Capitulo 9</button> <div id="c9" style="display:none"> <iframe src="Manual para Conductores_C9.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction1009() {var x = document.getElementById("c9"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch10"> <button onclick="myFunction10010()">Capitulo 10</button> <div id="c10" style="display:none"> <iframe src="Manual para Conductores_C10.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction10010() {var x = document.getElementById("c10"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch11"> <button onclick="myFunction10011()">Capitulo 11</button> <div id="c11" style="display:none"> <iframe src="Manual para Conductores_C11.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction10011() {var x = document.getElementById("c11"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+<br>
+<a name="Ch12"> <button onclick="myFunction10012()">Capitulo 12</button> <div id="c12" style="display:none"> <iframe src="Manual para Conductores_C12.pdf" width="100%" height="500px"> </iframe> </div><script> function myFunction10012() {var x = document.getElementById("c12"); if (x.style.display === "none") {x.style.display = "block"; } else { x.style.display = "none";}}  </script> </a>
+</br>
+
+
+
+<br> <h3> Created by the Student Coalition for Migrant Workers @ SUNY Geneseo </h3> <img src="logo.jpg" alt="SCMW Logo" style="width:200px;height:100px;"> </br>
+
+</body>
 
 </html>
