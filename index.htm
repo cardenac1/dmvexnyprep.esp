@@ -57,14 +57,16 @@ margin-top: 20px;
   <a href="https://dmv.ny.gov/driver-license/drivers-manual-practice-tests"> aqui </a> </br> </p> 
 <!--- QUESTIONS--->
   
-<!--- QUESTION BLOCK START ---> <form id="form1"> <a name="Q1"><h4>  
+<!--- QUESTION BLOCK START ---> 
+<form id="form1"> <a name="Q1"><h4>  
 <!---QUESTION HERE---> Pregunta #1: Una línea entrecortada indica:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
 <!---option 1 here---> Usted puede pasar otros vehículos y cambiar de carriles, si es seguro hacerlo.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
 <!---option 2 here---> Usted no puede pasar otros vehículos o cruzar la línea.
 </label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
 <!---option 3 here---> Usted puede cambiar de carril, pero solamente cuando las condiciones del tránsito u obstrucciones en la carretera lo hacen necesario. </label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
 <!---option 4 here---> Ninguna de las anteriores. </label>
-<form id="form1">  
+</form>
+
 <button onclick="myFunction()">Haz click aquí para ver la respuesta correcta.</button>
 <div id="myDIV">
 <h4> Pregunta# 1: Respuesta correcta:</h4> Una línea entrecortada indica:  
@@ -81,13 +83,14 @@ function myFunction() {
 }
 </script>
 
-<a name="Q2"><h4>Pregunta #2
+
+<form id="form1"> 
+<h4>Pregunta #2
 ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
 Cuando es difícil ver adelante.</label> <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>
 Al llevar una carga pesada o tirar de un remolque.</label> <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />
 Cuando se siguen motocicletas.</label> <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />
 Todas las anteriores.</label>
-<br> <a href="#A_Q2">Haz click aquí para ver la respuesta.</a> </br></form>
 <button onclick="myFunction()"> Haz click aquí para ver la respuesta correcta.</button>
 <div id="myDIV">
 <h4> Pregunta# 2: Respuesta correcta:</h4>   ¿En cuál de las siguientes situaciones los conductores pueden necesitar más espacio frente a su vehículo?<br> 
@@ -103,7 +106,9 @@ function myFunction() {
   }
 }
 </script>
-
+</form>
+  
+  
 <form id="form1"> 
 <a name="Q3"><h4>Pregunta #3
 Si su auto cae en agua, usted debe:</h4> </a>  <label for="sub_string"> <input type="radio" name="sub" value="25" id="sub_string"/> 
